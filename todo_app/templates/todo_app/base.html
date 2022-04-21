@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To do List</title>
+
+    <!-- bootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4ee475c31d.js" crossorigin="anonymous"></script>
+
+ <style>
+body{
+  font-family: 'Merienda', cursive;
+  background-color: #dfe7fd;
+  padding-top: 100px;
+  background: linear-gradient(90deg, #a9fff7 0%, #e5f4e3 100%)
+}
+
+h1,h2,h3,h4,h5,h6{
+
+  font-family: 'Oldenburg', cursive;
+
+
+}
+h1{
+  color: #4b1d3f;
+}
+
+a,p{
+  color: #220901;
+}
+
+.container{
+  max-width: 700px;
+  max-height: 700px;
+  margin: auto;
+  background-color: #e1ecf7;
+  box-shadow: 5px 5px 15px -6px #e7bc91;
+
+}
+
+.header-bar{
+  display: flex;
+  justify-content: space-between;
+  color: #f1faee;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(90deg, #e574bc 0%, #dabfff 43%, #96d7ff 100%)
+
+}
+
+.header-bar a{
+  text-decoration: none;
+  color: #081c15;
+
+}
+
+
+.task-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 1px solid #cddafd;
+}
+
+.task-title{
+  display: flex;
+}
+
+.task-title a{
+  text-decoration: none;
+  color: #540b0e;
+  margin-left: 10px;
+}
+
+.task-complete-icon{
+  height: 20px;
+  width: 20px;
+  background-color: #70e000;
+/* to a=make checkbox jastai box */
+  border-radius: 100%;
+
+}
+
+.task-incomplete-icon{
+  height: 20px;
+  width: 20px;
+  background-color: #b2b0b0;
+  border-radius: 50%;
+}
+
+input[type=text], input[type=password],textarea{
+  border: 1px solid #00000;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+}
+
+.button-type{
+  border: 1px solid #b7094c;
+  background-color: #fff1e6;
+  color: #b7094c;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+</style>
+  </head>
+  <body>
+
+      <div class="container">
+        {% block content %}
+
+        {% endblock content %}
+
+      </div>
+
+  </body>
+</html>
